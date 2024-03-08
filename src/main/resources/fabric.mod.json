@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorialfabric",
+  "version": "${version}",
+  "name": "TutorialFabric",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/user/TutorialFabric"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tutorialfabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.tutorialfabric.client.TutorialFabricClient"
+    ],
+    "main": [
+      "net.tutorialfabric.TutorialFabric"
+    ]
+  },
+  "mixins": [
+    "tutorialfabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
